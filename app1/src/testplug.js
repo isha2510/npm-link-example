@@ -10,7 +10,7 @@ document.getElementById('addBtn').addEventListener('click' ,performAddition);
     let result = document.getElementById("result");
     let addition = firstNumber + secondNumber;
     result.innerText=addition;
-    button.onclick = e => import('dependencymodule/src/Button')
+    button.onclick = e => import('app2/src/Button')
     .then(
       module=>{
         console.log(module);
