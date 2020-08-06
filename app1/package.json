@@ -1,5 +1,5 @@
 {
-  "name": "webpack-poc",
+  "name": "app1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,6 +25,6 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "dependencymodule": "^1.0.0"
+    "app2": "^1.0.0"
   }
 }
