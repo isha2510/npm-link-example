@@ -10,18 +10,24 @@ document.getElementById('addBtn').addEventListener('click' ,performAddition);
     let result = document.getElementById("result");
     let addition = firstNumber + secondNumber;
     result.innerText=addition;
-    button.onclick = e => import('app2/src/Button')
-    .then(
+    // button.onclick = e => import('dependencymodule/src/Button')
+    // .then(
+    //   module=>{
+    //     console.log(module);
+    //     module.Button();
+    //   }
+    // ).catch( err => console.log(err));
+    button.onclick=e=> import('dependencymodule/src/assets/webpack.png').then(
       module=>{
         console.log(module);
-        module.Button();
-      }
-    ).catch( err => console.log(err));
+        const myIcon = new Image();
+  myIcon.src = module.default;
 
-    
-    
-   
-      
+  element.appendChild(myIcon);
+  return element;
+      }
+    )  
+        
           return element;
         }
         document.body.appendChild(performAddition());
