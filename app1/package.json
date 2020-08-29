@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "js-add": "node app2/add.js"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +25,7 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-    
+    "webpack-dev-server": "^3.11.0",
+    "app2": "^1.0.0"
   }
 }
